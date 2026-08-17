@@ -1,5 +1,5 @@
 /* Design tokens keep colour, spacing and radii consistent across all views. */
-:root { --ink:#12213d; --muted:#5f6f88; --paper:#f7f8fc; --panel:#fff; --navy:#101b35; --violet:#6857e9; --teal:#25b99e; --gold:#f3b94f; --danger:#ca4354; --success:#20876f; --line:#dce1ed; --shadow:0 18px 48px rgba(20,35,67,.12); --radius:22px; }
+:root { --ink:#12213d; --muted:#5f6f88; --paper:#dcd0ff; --panel:#fff; --navy:#101b35; --violet:#6857e9; --teal:#25b99e; --gold:#f3b94f; --danger:#ca4354; --success:#20876f; --line:#dce1ed; --shadow:0 18px 48px rgba(20,35,67,.12); --radius:22px; }
 /* Reset sizing and establish the readable type scale. */
 * { box-sizing:border-box; }
 html { scroll-behavior:smooth; }
