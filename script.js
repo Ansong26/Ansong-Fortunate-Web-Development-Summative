@@ -19,7 +19,7 @@ const QUESTIONS = [
 ];
 
 /* Central state prevents disconnected global variables and makes resets predictable. */
-const state = { profile: {}, answers: Array(QUESTIONS.length).fill(null), questionIndex: 0, secondsLeft: 120, timerId: null, startedAt: 0, locked: false, timedOut: false, videoPauseShown: false };
+const state = { profile: {}, answers: Array(QUESTIONS.length).fill(null), questionIndex: 0, secondsLeft: 10, timerId: null, startedAt: 0, locked: false, timedOut: false, videoPauseShown: false };
 const $ = (selector) => document.querySelector(selector);
 const $$ = (selector) => [...document.querySelectorAll(selector)];
 
