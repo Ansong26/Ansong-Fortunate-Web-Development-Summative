@@ -26,7 +26,7 @@ const $$ = (selector) => [...document.querySelectorAll(selector)];
 /* Regex rules meet the assessment's custom name, institution and phone requirements. */
 const RULES = {
   fullName: { test: (value) => /^[A-Za-zÀ-ÖØ-öø-ÿ' -]{2,60}$/.test(value.trim()), message: "Use 2-60 letters, spaces, apostrophes or hyphens only." },
-  email: { test: (value) => /^[a-z]{1}\.[a-z]+@alustudent\.com$/i.test(value.trim()), message: "Use your ALU email, for example firstletteroffirstname.lastname@alustudent.com." },
+  email: { test: (value) => /^[a-z]{1}\.[a-z]+@alustudent\.com$/i.test(value.trim()), message:"Use your ALU email, for example f.lastname@alustudent.com." },
   phone: { test: (value) => /^(?:\+230[ -]?)?[245789]\d{3}[ -]?\d{4}$/.test(value.trim()), message: "Use a valid Mauritian number, e.g. +230 5123 4567." },
   goal: { test: (value) => value.trim().length >= 12 && value.trim().length <= 180, message: "Write a goal between 12 and 180 characters." },
   contactName: { test: (value) => /^[A-Za-zÀ-ÖØ-öø-ÿ' -]{2,60}$/.test(value.trim()), message: "Use 2-60 letters, spaces, apostrophes or hyphens only." },
