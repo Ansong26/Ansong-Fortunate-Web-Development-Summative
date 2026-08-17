@@ -1,9 +1,9 @@
 /* Design tokens keep colour, spacing and radii consistent across all views. */
-:root { --ink:#12213d; --muted:#4f6380; --paper:#dcecff; --panel:#fff; --navy:#101b35; --violet:#4e6edb; --teal:#168db5; --gold:#e9aa37; --danger:#ca4354; --success:#20876f; --line:#c5d8f1; --shadow:0 18px 48px rgba(20,35,67,.14); --radius:22px; }
+:root { --ink:#12213d; --muted:#5f6f88; --paper:#f7f8fc; --panel:#fff; --navy:#101b35; --violet:#6857e9; --teal:#25b99e; --gold:#f3b94f; --danger:#ca4354; --success:#20876f; --line:#dce1ed; --shadow:0 18px 48px rgba(20,35,67,.12); --radius:22px; }
 /* Reset sizing and establish the readable type scale. */
 * { box-sizing:border-box; }
 html { scroll-behavior:smooth; }
-body { margin:0; min-width:320px; color:var(--ink); background:radial-gradient(circle at 10% 0,#a9ccff 0,transparent 32rem),linear-gradient(135deg,#dcecff 0%,#c7e0ff 100%); font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif; line-height:1.55; }
+body { margin:0; min-width:320px; color:var(--ink); background:radial-gradient(circle at 10% 0,#e6e2ff 0,transparent 29rem),var(--paper); font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif; line-height:1.55; }
 button,input,textarea { font:inherit; }
 button { cursor:pointer; }
 a { color:var(--violet); font-weight:700; }
