@@ -26,7 +26,7 @@ const $$ = (selector) => [...document.querySelectorAll(selector)];
 /* Regex rules meet the assessment's custom name, institution and phone requirements. */
 const RULES = {
   fullName: { test: (value) => /^[A-Za-zÀ-ÖØ-öø-ÿ' -]{2,60}$/.test(value.trim()), message: "Use 2-60 letters, spaces, apostrophes or hyphens only." },
-  email: { test: (value) => /^[a-z]+\.[a-z0-9]+@bse\.ac\.mu$/i.test(value.trim()), message: "Use your BSE email, for example student.id@bse.ac.mu." },
+  email: { test: (value) => /^[a-z]{1}\.[a-z]+@alustudent\.com$/i.test(value.trim()), message: "Use your ALU email, for example firstletteroffirstname.lastname@alustudent.com." },
   phone: { test: (value) => /^(?:\+230[ -]?)?[245789]\d{3}[ -]?\d{4}$/.test(value.trim()), message: "Use a valid Mauritian number, e.g. +230 5123 4567." },
   goal: { test: (value) => value.trim().length >= 12 && value.trim().length <= 180, message: "Write a goal between 12 and 180 characters." },
   contactName: { test: (value) => /^[A-Za-zÀ-ÖØ-öø-ÿ' -]{2,60}$/.test(value.trim()), message: "Use 2-60 letters, spaces, apostrophes or hyphens only." },
@@ -121,4 +121,3 @@ function submitFeedback(event) { event.preventDefault(); const form = event.curr
 
 /* Initial listeners are registered once after DOM parsing completes. */
 document.addEventListener("DOMContentLoaded", () => { wireValidation($("#profile-form")); wireValidation($("#feedback-form")); $("#profile-form").addEventListener("submit", startQuiz); $("#feedback-form").addEventListener("submit", submitFeedback); $("#next-question").addEventListener("click", nextQuestion); $("#previous-question").addEventListener("click", previousQuestion); $("#restart-quiz").addEventListener("click", () => { resetQuiz(); showView("landing"); }); $$('[data-view-target]').forEach((button) => button.addEventListener("click", () => { if (!button.disabled) showView(button.dataset.viewTarget); })); window.addEventListener("resize", () => { if (!$("#results").hidden) animateChart(state.scores); }); });
-
