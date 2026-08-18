@@ -6,6 +6,8 @@ An interactive, client-side reflection tool for incoming BSc (Hons) Software Eng
 
 - Repository: [Ansong-Fortunate_Summative_Web-Development](https://github.com/Ansong26/Ansong-Fortunate_Summative_Web-Development)
 - GitHub Pages:  https://ansong26.github.io/Ansong-Fortunate-Web-Development-Summative/
+- Video Link:
+- Documentation and Attribution Link: 
 
 ## Features
 
